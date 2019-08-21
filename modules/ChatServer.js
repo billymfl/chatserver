@@ -432,9 +432,8 @@ class ChatServer {
 
 // export ChatServer as a singleton
 module.exports = (config) => {
-  if (instance) {
-    return instance;
+  if (!instance) {
+    instance = new ChatServer(config);
   }
-  instance = new ChatServer(config);
   return instance;
 };
