@@ -1,0 +1,19 @@
+version: '3'
+services:
+  loadbalancer1:
+    image: "loadbalancer:2.0"
+    ports:
+      - "2000:80"
+    environment:
+      KEY: LB_TESTING_KEY
+    external_links:
+      - splunk
+
+  loadbalancer2:
+    image: "loadbalancer:2.0"
+    ports:
+      - "2001:80"
+    environment:
+      KEY: LB_TESTING_KEY
+
+
