@@ -42,7 +42,7 @@ module.exports = {
    * @param  {object} res
    */
   failure(res) {
-    res.status(400).json({message: 'Not allowed'});
+    res.status(401).json({message: 'Unauthorized'});
   },
 
   /** Attempts to get the referring IP
