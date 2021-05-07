@@ -31,7 +31,7 @@
     "hide-powered-by": "^1.1.0",
     "nocache": "^2.1.0",
     "portastic": "^1.0.1",
-    "underscore": "^1.9.1",
+    "underscore": "^1.12.1",
     "websocket": "^1.0.29"
   },
   "devDependencies": {
